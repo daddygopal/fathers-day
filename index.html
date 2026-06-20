@@ -1,11 +1,13 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Father's Day, Daddy ❤️</title>
+<title>Happy Father's Day, Daddy 💖</title>
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -18,10 +20,38 @@ html{
 
 body{
     font-family:'Segoe UI',sans-serif;
-    background:linear-gradient(135deg,#0f172a,#1e293b);
-    color:white;
+    background:linear-gradient(135deg,#ffd6e7,#ffeaf3);
+    color:#5c3b4a;
     line-height:1.8;
+    overflow-x:hidden;
 }
+
+/* Floating Hearts */
+
+.hearts{
+    position:fixed;
+    top:100%;
+    font-size:32px;
+    animation:float 10s linear infinite;
+    pointer-events:none;
+}
+
+.heart1{left:10%;}
+.heart2{left:40%; animation-delay:3s;}
+.heart3{left:75%; animation-delay:6s;}
+
+@keyframes float{
+    from{
+        transform:translateY(0);
+        opacity:1;
+    }
+    to{
+        transform:translateY(-120vh);
+        opacity:0;
+    }
+}
+
+/* Hero */
 
 .hero{
     min-height:100vh;
@@ -35,19 +65,17 @@ body{
 
 .hero h1{
     font-size:4rem;
-    color:#fbbf24;
+    color:#ff4f8b;
     margin-bottom:20px;
 }
 
 .hero p{
-    font-size:1.3rem;
     max-width:800px;
+    font-size:1.3rem;
 }
 
 .scroll{
     margin-top:40px;
-    font-size:1.1rem;
-    opacity:0.8;
     animation:bounce 2s infinite;
 }
 
@@ -57,6 +85,8 @@ body{
     }
 }
 
+/* Sections */
+
 .section{
     max-width:1000px;
     margin:auto;
@@ -64,30 +94,19 @@ body{
 }
 
 .section h2{
-    color:#fbbf24;
+    color:#ff4f8b;
     margin-bottom:25px;
     font-size:2.2rem;
 }
 
 .card{
-    background:rgba(255,255,255,0.08);
-    border-radius:20px;
+    background:rgba(255,255,255,0.75);
+    border-radius:25px;
     padding:30px;
-    backdrop-filter:blur(10px);
-    transition:0.3s;
+    box-shadow:0 8px 25px rgba(255,79,139,0.15);
 }
 
-.card:hover{
-    transform:translateY(-5px);
-}
-
-ul{
-    padding-left:25px;
-}
-
-li{
-    margin-bottom:12px;
-}
+/* Footer */
 
 .footer{
     text-align:center;
@@ -95,215 +114,266 @@ li{
 }
 
 .footer h2{
-    color:#fbbf24;
+    color:#ff4f8b;
     margin-bottom:25px;
 }
 
 .signature{
     margin-top:40px;
-    font-size:1.4rem;
-    color:#fbbf24;
-}
-
-.highlight{
-    color:#fbbf24;
+    font-size:1.5rem;
+    color:#ff4f8b;
     font-weight:bold;
 }
+
+ul{
+    padding-left:25px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
 </style>
 </head>
 
 <body>
 
+<div class="hearts heart1">💖</div>
+<div class="hearts heart2">💕</div>
+<div class="hearts heart3">💗</div>
+
 <section class="hero">
 
-    <h1>Happy Father's Day, Daddy ❤️</h1>
+<h1>💖 Happy Father's Day, Daddy 💖</h1>
 
-    <p>
-        To the world, you're a psychiatrist.
-        <br><br>
-        To me, you're my mental coach, my biggest supporter,
-        my partner in crime, my teammate, and one of my best friends.
-    </p>
+<p>
+To the world, you're a psychiatrist.
+<br><br>
+To me, you're my mental coach, my biggest supporter,
+my partner in crime, my teammate, and one of my best friends.
+</p>
 
-    <div class="scroll">
-        ↓ Scroll Down ↓
-    </div>
-
-</section>
-
-<section class="section">
-
-    <h2>💌 Dear Daddy</h2>
-
-    <div class="card">
-
-        Thank you for being the person I can talk to about absolutely anything.
-
-        <br><br>
-
-        Thank you for listening to every rant, every crazy idea,
-        every exam panic, every random thought, and every dream.
-
-        <br><br>
-
-        Thank you for always believing in me, especially during the times
-        when I found it difficult to believe in myself.
-
-        <br><br>
-
-        I know I don't always say it, but I notice every little thing you do.
-        I am incredibly lucky to have you.
-
-    </div>
+<div class="scroll">
+💕 Scroll Down 💕
+</div>
 
 </section>
 
 <section class="section">
 
-    <h2>🧠 My Mental Coach</h2>
+<h2>💌 Dear Daddy</h2>
 
-    <div class="card">
+<div class="card">
 
-        Through every challenge, every stressful exam,
-        every difficult decision, and every moment of doubt,
-        you've always been there.
+Thank you for being the person I can talk to about absolutely anything.
 
-        <br><br>
+<br><br>
 
-        You never just solved my problems for me.
-        You taught me how to think, how to stay calm,
-        and how to trust myself.
+Thank you for listening to every rant, every crazy idea,
+every exam panic, every random thought, and every dream.
 
-        <br><br>
+<br><br>
 
-        Because of you, I am stronger, more confident,
-        and more resilient than I would have been otherwise.
+Thank you for always believing in me,
+especially when I found it difficult to believe in myself.
 
-    </div>
+<br><br>
 
-</section>
+I know I don't always say it,
+but I notice every little thing you do.
 
-<section class="section">
+<br><br>
 
-    <h2>😂 My Partner in Crime</h2>
+I am incredibly lucky to have you.
 
-    <div class="card">
-
-        Thank you for being my favorite teammate.
-
-        <br><br>
-
-        For taking my side.
-
-        <br><br>
-
-        For teasing Mom together.
-
-        <br><br>
-
-        For laughing at things nobody else understands.
-
-        <br><br>
-
-        For all the random conversations, inside jokes,
-        and moments that make our bond so special.
-
-        <br><br>
-
-        Some of my happiest memories are simply us being ourselves.
-
-    </div>
+</div>
 
 </section>
 
 <section class="section">
 
-    <h2>✨ Things You've Taught Me</h2>
+<h2>🧠 My Mental Coach</h2>
 
-    <div class="card">
+<div class="card">
 
-        <ul>
-            <li>Believe in yourself even when things don't go as planned.</li>
-            <li>Stay calm under pressure.</li>
-            <li>Face problems with courage.</li>
-            <li>Always keep learning.</li>
-            <li>Kindness is a strength.</li>
-            <li>Laugh whenever you can.</li>
-            <li>Never give up on your dreams.</li>
-        </ul>
+Through every challenge, every stressful exam,
+every difficult decision, and every moment of doubt,
+you've always been there.
 
-    </div>
+<br><br>
+
+You never just solved my problems.
+
+<br><br>
+
+You taught me how to think,
+how to stay calm,
+and how to trust myself.
+
+<br><br>
+
+Because of you, I am stronger,
+more confident,
+and more resilient.
+
+</div>
 
 </section>
 
 <section class="section">
 
-    <h2>❤️ Why You're My Favorite Person</h2>
+<h2>😂 My Partner in Crime</h2>
 
-    <div class="card">
+<div class="card">
 
-        You listen before judging.
+Thank you for taking my side.
 
-        <br><br>
+<br><br>
 
-        You support me without conditions.
+For teasing Mom together.
 
-        <br><br>
+<br><br>
 
-        You celebrate my successes and help me through my failures.
+For all our inside jokes.
 
-        <br><br>
+<br><br>
 
-        You somehow always know what I need to hear.
+For laughing with me when nobody else understands why something is funny.
 
-        <br><br>
+<br><br>
 
-        And most importantly...
+For being the kind of dad who also became a friend.
 
-        <br><br>
+</div>
 
-        You've never just been my father.
+</section>
 
-        You've also been my friend.
+<section class="section">
 
-    </div>
+<h2>✨ Things You've Taught Me</h2>
+
+<div class="card">
+
+<ul>
+<li>Believe in yourself even when things don't go as planned.</li>
+<li>Stay calm under pressure.</li>
+<li>Be kind.</li>
+<li>Face problems with courage.</li>
+<li>Keep learning.</li>
+<li>Laugh often.</li>
+<li>Never stop dreaming.</li>
+</ul>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>💕 Daddy's Review</h2>
+
+<div class="card">
+
+⭐⭐⭐⭐⭐
+
+<br><br>
+
+Would recommend.
+
+<br><br>
+
+Excellent listener.
+
+<br><br>
+
+Always available for advice.
+
+<br><br>
+
+Professional partner in crime.
+
+<br><br>
+
+Takes my side more often than he should.
+
+<br><br>
+
+10/10 Daddy.
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>❤️ Why You're My Favorite Person</h2>
+
+<div class="card">
+
+You listen before judging.
+
+<br><br>
+
+You support me without conditions.
+
+<br><br>
+
+You celebrate my successes
+and help me through my failures.
+
+<br><br>
+
+You somehow always know what I need to hear.
+
+<br><br>
+
+You've never just been my father.
+
+<br><br>
+
+You've also been my friend.
+
+</div>
 
 </section>
 
 <section class="footer">
 
-    <h2>For My Daddy ❤️</h2>
+<h2>For My Daddy 💖</h2>
 
-    <p style="max-width:800px;margin:auto;font-size:1.2rem;">
+<p style="max-width:800px;margin:auto;font-size:1.2rem;">
 
-        People know you as a psychiatrist.
+People know you as a psychiatrist.
 
-        <br><br>
+<br><br>
 
-        I know you as the person who helped me become who I am.
+I know you as the person who helped me become who I am.
 
-        <br><br>
+<br><br>
 
-        Thank you for being my father, my mentor,
-        my teammate, and my friend.
+Thank you for being my father,
+my mentor,
+my teammate,
+and my friend.
 
-        <br><br>
+<br><br>
 
-        I've never had to wonder what unconditional support feels like,
-        because I've had you.
+I've never had to wonder what unconditional support feels like,
+because I've had you.
 
-        <br><br>
+<br><br>
 
-        Happy Father's Day, Daddy.
+Happy Father's Day, Daddy.
 
-    </p>
+</p>
 
-    <div class="signature">
-        Love always,<br>
-        Mitra ❤️
-    </div>
+<div class="signature">
+Love always,<br>
+Mitra 💖
+</div>
 
 </section>
 
 </body>
 </html>
+```
